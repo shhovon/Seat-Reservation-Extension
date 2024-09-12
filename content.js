@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 function scheduleBooking(timeInput) {
     const messageDiv = document.createElement('div');
 	
-	// Set styles to center the message on the page
+
     messageDiv.style.position = 'fixed';
     messageDiv.style.top = '20%';
     messageDiv.style.left = '55%';
