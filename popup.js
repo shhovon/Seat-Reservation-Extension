@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Booking will start exactly at: 4:30 PM");
 
         if (now < bookingStartTime) {
-            displayMessage("Booking has not started yet. Please wait until 4:15 PM.", "red");
+            displayMessage("Booking has not started yet. Wait until pool is created", "red");
             return;
         }
 
