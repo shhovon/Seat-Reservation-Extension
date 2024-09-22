@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Seat Reservation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+        #messageDiv {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #timeInput {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        #startBooking {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #startBooking:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        #watermark {
+            text-align: center;
+            font-size: 10px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Seat Reservation</h1>
-    <label for="time">Select Time:</label>
-    <input type="time" id="time" step="1">
+    <h3>Seat Reservation</h3>
+    <input type="time" id="timeInput" />
     <button id="startBooking">Start Booking</button>
+    <div id="messageDiv"></div>
+    <div id="watermark">Shovon Roy</div>
 
-    <div id="message" class="message"></div>
-	<div class="watermark">© Shovon Roy</div>
-  </div>
-
-  <script src="popup.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>
