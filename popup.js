@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!currentTab.url.startsWith("https://transport.pacificjeans.com")) {
                 messageDiv.textContent = "This extension can only be used on transport.pacificjeans.com";
+				messageDiv.style.color = "red";
                 return;
             }
 
