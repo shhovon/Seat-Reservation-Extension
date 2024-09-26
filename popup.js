@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     chrome.tabs.sendMessage(currentTab.id, { time: selectedTime }, (response) => {
                         if (response && response.success) {
-                            messageDiv.textContent = "Seat successfully selected!";
+                            messageDiv.textContent = "Seat successfully selected! Wait for auto reservation.";
                             messageDiv.style.color = "green";
                         } else {
                             messageDiv.textContent = response ? response.error : "Error during booking.";
